@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quit">quit</string>
+    <string name="Back">Back</string>
+    <string name="Signal_Strength">Signal Strength</string>
+    <string name="BSSID_Name">BSSID Name</string>
+    <string name="encryption">Encryption</string>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">SkryFi</string>
+    <string name="services">Services</string>
+    <string name="options">Options</string>
+    <string name="scan">START SCAN</string>
+    <string name="SERVICE_STARTED">wifi services started</string>
+    <string name="SERVICE_STOPPED">wifi services stopped</string>
+    <string name="version">V.1</string>
+    <string name="IDLE_STATUS">Scanning</string>
+    <string name="clear">Clear</string>
+    <string name="crackwpekey">Crack WPE Key</string>
+    <string name="getwpakey">Get WPA Key</string>
+    <color name = "grey">#b0b1b0</color>
+    <color name = "black">#000000</color>
+    
+
+<color name="white">#ffffff</color>
+
+</resources>

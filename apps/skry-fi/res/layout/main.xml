@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >
+      
+	<RelativeLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@color/white">
+		<TextView
+			android:text="@string/IDLE_STATUS"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:visibility="visible"
+			android:id="@+id/scanning_status"
+			android:layout_centerVertical="true" 
+			android:height="50px" 
+			android:textSize="24px">
+		</TextView>
+			
+		<ImageView 
+			android:layout_centerVertical="true" 
+			 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/RadarView" 
+			android:background="@color/grey" 
+			android:minWidth="30px" 
+			android:minHeight="30px"
+			android:layout_alignTop="@+id/scanning_status"
+			android:layout_alignParentRight="true"
+			android:maxWidth="50px"
+			android:maxHeight="50px">
+		</ImageView>
+		
+		<ListView
+	    	android:id="@android:id/list"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"	
+	    	android:layout_below="@id/scanning_status"    	
+    	android:background="@color/black"/>
+    	<TableLayout
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_alignParentBottom="true"
+	    	android:id="@+id/table_buttons"
+	    	android:background="@color/grey"
+    	>
+    		<TableRow>
+    			<ImageButton
+    				android:id="@+id/options_menu_button"
+    				android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:background="@drawable/left_button2"
+    			>
+    			</ImageButton>
+    			    				
+    			<View   				
+    			    android:layout_height="fill_parent"
+					android:layout_width="2dip"
+    				android:background="@color/grey"
+    			>
+    			</View>
+    			<ImageButton
+    				android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:background="@drawable/arrows2"
+    			>
+    			</ImageButton>
+    			<View
+    				android:layout_height="fill_parent"
+					android:layout_width="2dip"
+    				android:background="@color/grey"
+				>
+    			</View>
+    			<ImageButton
+    				android:id="@+id/sort_button"
+    				android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:background="@drawable/dbbuttons2"
+    			>
+    			</ImageButton>
+    		</TableRow>
+    	</TableLayout>	
+	
+
+</RelativeLayout>
+</LinearLayout>

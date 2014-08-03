@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- list.xml -->
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="horizontal">
+     
+     <!-- Symbol for wireless encryption type -->
+     <ImageView
+     	android:id="@+id/icon"
+		android:layout_width="50sp"
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/red_triangle"
+     	android:paddingRight="10sp"
+     >
+     </ImageView>	
+      	
+	 <TextView
+		android:layout_width="275sp"
+		android:layout_height="wrap_content"
+		android:id="@+id/network_name"
+		android:text="Nothin"
+		android:layout_centerHorizontal="true"
+		android:layout_toRightOf="@id/icon">  
+	 </TextView>
+      
+	   	<!-- Table for showing basic information -->
+	    <TableLayout
+	     	android:layout_width="fill_parent"
+	     	android:layout_height="wrap_content"
+	     	android:layout_centerHorizontal="true"
+	     	android:layout_toRightOf="@id/icon"
+	     	android:layout_below="@id/network_name"
+	     	
+	     	>
+	     	
+	     	<!-- Show signal strength percentage, db level, and encryption type -->
+	     	<TableRow>
+		  
+		       	<TextView
+		            android:id="@+id/signal_strength_db_level"
+		            android:text="-0dB"
+		            android:width="80sp"
+		            >   
+		       	</TextView>
+		       	<TextView
+		            android:id="@+id/encryption_type"
+		            android:text= "Open"
+		            >  
+		       	</TextView>
+		    </TableRow>	
+		</TableLayout>
+     
+  
+      <!-- Symbol for showing more information -->
+     <ImageView
+     	android:id="@+id/show_more_information_arrow_button"
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:padding="7sp"
+     	android:background="@drawable/arrow"
+     	android:layout_alignParentRight="true"
+     	>
+     </ImageView>
+
+     <LinearLayout
+     	android:id="@+id/show_more_information"
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:layout_below="@id/icon"
+     	android:background="@android:color/white"
+     	
+     >
+		<TableLayout
+			android:layout_width="fill_parent"
+     		android:layout_height="wrap_content"
+     	>
+     		<TableRow>
+     			<TextView
+     				android:paddingLeft="10sp"
+     				android:layout_width="80sp"
+     				android:layout_height="wrap_content"
+     				android:text="BSSID:"
+     				android:textColor="@color/black"
+     			></TextView>
+     			<TextView
+     				android:layout_width="80sp"
+     				android:layout_height="wrap_content"
+     				android:id="@+id/table_bssid"
+     				android:textColor="@color/black"
+     				android:text = "test"
+     			></TextView>
+     			<TextView
+     				android:paddingLeft="10sp"
+     				android:layout_width="70sp"
+     				android:layout_height="wrap_content"
+     				android:text="Channel:"
+     				android:textColor="@color/black"	
+     			></TextView>
+     			<TextView
+     				android:layout_width="wrap_content"
+     				android:layout_height="wrap_content"
+     				android:id="@+id/table_channel"
+     				android:textColor="@color/black"
+     				android:text = "test"
+     			></TextView>
+     		</TableRow>
+     		<TableRow>
+     			<TextView
+     				android:paddingLeft="10sp"
+     				android:layout_width="80sp"
+     				android:layout_height="wrap_content"
+     				android:text="Security:"
+     				android:textColor="@color/black"
+     			></TextView>
+     			<TextView
+     				android:layout_width="80sp"
+     				android:layout_height="wrap_content"
+     				android:id="@+id/table_security"
+     				android:textColor="@color/black"
+     				android:text = "test"
+     			></TextView>
+     			<TextView
+     				android:paddingLeft="10sp"
+     				android:layout_width="70sp"
+     				android:layout_height="wrap_content"
+     				android:text="Freq:"
+     				android:textColor="@color/black"
+     			></TextView>
+     			<TextView
+     				android:layout_width="wrap_content"
+     				android:layout_height="wrap_content"
+     				android:id="@+id/table_freq"
+     				android:textColor="@color/black"
+     				android:text = "test"
+     			></TextView>
+     		</TableRow>
+     		<TableRow>
+     		    <TextView
+     				android:paddingLeft="10sp"
+     				android:layout_width="80sp"
+     				android:layout_height="wrap_content"
+     				android:text="Last Seen:"
+     				android:textColor="@color/black"
+     			></TextView>
+     			<TextView
+     				android:layout_width="80sp"
+     				android:layout_height="wrap_content"
+     				android:id="@+id/table_last_seen"
+     				android:textColor="@color/black"
+     				android:text = "test"
+     			></TextView>
+     			 <TextView
+     				android:paddingLeft="10sp"
+     				android:layout_width="70sp"
+     				android:layout_height="wrap_content"
+     				android:textColor="@color/black"
+     				android:text="Surveys: "></TextView>
+     			<TextView
+     				android:layout_width="wrap_content"
+     				android:layout_height="wrap_content"
+     				android:id="@+id/table_number_of_surveys"
+     				android:textColor="@color/black"
+     				android:text = "test"
+     			></TextView>
+     			
+
+     		</TableRow>
+     		<TableRow>
+     			<TextView
+     				android:paddingLeft="10sp"
+     				android:layout_width="80sp"
+     				android:layout_height="wrap_content"
+     				android:text="Keys:"
+     				android:textColor="@color/black"
+     			></TextView>
+     			<TextView
+     				android:layout_width="wrap_content"
+     				android:layout_height="wrap_content"
+     				android:id="@+id/table_keys"
+     				android:textColor="@color/black"
+     				android:text = "test"
+     			></TextView>
+     			<TextView
+     				android:paddingLeft="10sp"
+     				android:layout_width="70sp"
+     				android:layout_height="wrap_content"
+     				android:text="Signal:"
+     				android:textColor="@color/black"
+     				android:id="@+id/table_signal_display_level"
+     				
+     			></TextView>
+     			<TextView
+     				android:layout_width="wrap_content"
+     				android:layout_height="wrap_content"
+     				android:id="@+id/table_signal"
+     				android:textColor="@color/black"
+     				android:text = ""
+     			></TextView>
+
+     		</TableRow>
+     		<TableRow>
+     			<Button
+     				android:id="@+id/table_crack_button"
+     				android:paddingLeft="10sp"
+     				android:layout_width="80sp"
+     				android:layout_height="wrap_content"
+     				android:text="More"
+     			></Button>
+     		</TableRow>
+     	</TableLayout>
+     </LinearLayout>
+
+</RelativeLayout>

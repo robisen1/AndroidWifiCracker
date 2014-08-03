@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/map"
+          android:title="Signal Map" 
+    />
+    <item android:id="@+id/sniffing"
+          android:title="Sniffing" 
+    />
+    <item android:id="@+id/deauthenticate"
+          android:title="Deauthenticate"
+    />
+    <item android:id="@+id/crackorgrabkey"
+          android:title="Crack"
+    /> 
+    <item android:id="@+id/viewnodes"
+          android:title="View Nodes"
+    /> 
+    <item android:id="@+id/back"
+          android:title="Back"
+    />
+</menu>

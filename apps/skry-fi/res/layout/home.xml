@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:background="@drawable/background">
+  	<TextView
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_centerHorizontal="true"
+  		android:paddingTop="60sp"
+  		android:text="@string/version"
+  	></TextView>
+  	<TableLayout
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	>
+		<TableRow>
+			<TextView
+				android:layout_width="200sp"
+	    		android:layout_height="wrap_content"
+	    		android:text="Known Networks"
+	    		android:textSize="24sp"
+	    		>
+			</TextView>
+			<TextView
+				android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="0"
+	    		android:textSize="24sp"
+	    		android:id="@+id/home_knownnetworks"
+	    		>
+			</TextView>
+		</TableRow>	
+		<TableRow>
+			<TextView
+				android:layout_width="200sp"
+				android:layout_height="wrap_content"
+	    		android:textSize="24sp"
+	    		android:text="Known Devices"
+	    		android:paddingTop="10sp"
+	    		>
+			</TextView>
+			<TextView
+				android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="0"
+	    		android:textSize="24sp"
+	    		android:paddingTop="10sp"
+	    		android:id="@+id/home_knowndevices">
+			</TextView>
+		</TableRow>
+		<TableRow>
+			<TextView
+				android:layout_width="200sp"
+				android:layout_height="wrap_content"
+	    		android:text="Keys Cracked"
+	    		android:textSize="24sp"
+	    		android:paddingTop="10sp">
+			</TextView>
+			<TextView
+				android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="0"
+	    		android:textSize="24sp"
+	    		android:paddingTop="10sp"
+	    		android:id="@+id/home_keyscracked">
+			</TextView>
+		</TableRow>
+	</TableLayout>
+
+    <TableLayout
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/grey"
+	>
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/left_button2"
+			android:id="@+id/home_menu_button"
+		></ImageButton>
+	</TableLayout>
+</RelativeLayout>

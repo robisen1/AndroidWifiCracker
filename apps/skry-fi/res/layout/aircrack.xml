@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	> 
+
+	<TableLayout
+  	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:id="@+id/air_crack_essid_table"
+   	android:layout_centerHorizontal="true"
+   	>
+   		<TableRow>
+   			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/white"
+				android:text = "essid: "
+				>
+ 			</TextView>
+ 			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/air_crack_essid"
+				android:textColor="@android:color/white"
+				android:text = "Test"
+			>
+			</TextView>
+   		</TableRow>
+	</TableLayout>	
+  	<LinearLayout
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_centerHorizontal="true"
+  		android:id="@+id/air_crack_table"
+  		android:layout_below="@id/air_crack_essid_table"
+  		android:paddingTop="20sp"
+  		android:orientation="vertical"
+  	>
+		<TableLayout
+			android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    >
+	   		<TableRow>
+	   			<TextView
+	   				android:layout_width="70sp"
+	   				android:layout_height="wrap_content"
+	   				android:text="BSSID:"
+	   				android:textColor="@android:color/white"
+	   			></TextView>
+	   			<TextView
+	   				android:layout_width="80sp"
+	   				android:layout_height="wrap_content"
+	   				android:id="@+id/aircrack_table_bssid"
+	   				android:textColor="@android:color/white"
+	   				android:text = "test"
+	   			></TextView>
+	   			<TextView
+	   				android:paddingLeft="10sp"
+	   				android:layout_width="70sp"
+	   				android:layout_height="wrap_content"
+	   				android:text="Channel:"
+	   				android:textColor="@android:color/white"	
+	   			></TextView>
+	   			<TextView
+	   				android:layout_width="wrap_content"
+	   				android:layout_height="wrap_content"
+	   				android:id="@+id/aircrack_table_channel"
+	   				android:textColor="@android:color/white"
+	   				android:text = "test"
+	   			></TextView>
+	   		</TableRow>
+	   		<TableRow>
+	   			<TextView
+	   			
+	   				android:layout_width="70sp"
+	   				android:layout_height="wrap_content"
+	   				android:text="Key Type:"
+	   				android:textColor="@android:color/white"
+	   			></TextView>
+	   			<TextView
+	   				android:layout_width="80sp"
+	   				android:layout_height="wrap_content"
+	   				android:id="@+id/aircrack_table_key_type"
+	   				android:textColor="@android:color/white"
+	   				android:text = "test"
+	   			></TextView>
+	   			<TextView
+	   				android:paddingLeft="10sp"
+	   				android:layout_width="70sp"
+	   				android:layout_height="wrap_content"
+	   				android:text="Freq:"
+	   				android:textColor="@android:color/white"
+	   			></TextView>
+	   			<TextView
+	   				android:layout_width="wrap_content"
+	   				android:layout_height="wrap_content"
+	   				android:id="@+id/aircrack_table_freq"
+	   				android:textColor="@android:color/white"
+	   				android:text = "test"
+	   			></TextView>
+	   		</TableRow>
+	   		<TableRow>
+	   			<TextView
+	   				
+	   				android:layout_width="70sp"
+	   				android:layout_height="wrap_content"
+	   				android:text="Last Seen:"
+	   				android:textColor="@android:color/white"
+	   			></TextView>
+	   			<TextView
+	   				android:layout_width="80sp"
+	   				android:layout_height="wrap_content"
+	   				android:id="@+id/aircrack_table_last_seen"
+	   				android:textColor="@android:color/white"
+	   				android:text = "test"
+	   			></TextView>
+	   			<TextView
+	   				android:paddingLeft="10sp"
+	   				android:layout_width="70sp"
+	   				android:layout_height="wrap_content"
+	   				android:text="Signal:"
+	   				android:textColor="@android:color/white"
+	   			></TextView>
+	   			<TextView
+	   				android:layout_width="wrap_content"
+	   				android:layout_height="wrap_content"
+	   				android:id="@+id/aircrack_table_signal"
+	   				android:textColor="@android:color/white"
+	   				android:text = "test"
+	   			></TextView>
+	   		</TableRow>
+	   		<TableRow>
+	   			<TextView
+	   				android:layout_width="70sp"
+	   				android:layout_height="wrap_content"
+	   				android:text="IVs:"
+	   				android:textColor="@android:color/white"
+	   			></TextView>
+	   			<TextView
+	   				android:layout_width="wrap_content"
+	   				android:layout_height="wrap_content"
+	   				android:id="@+id/aircrack_table_ivs"
+	   				android:textColor="@android:color/white"
+	   				android:text = "test"
+	   			></TextView>
+				<TextView
+	   				android:paddingLeft="10sp"
+	   				android:layout_width="70sp"
+	   				android:layout_height="wrap_content"
+	   				android:textColor="@android:color/white"
+	   				android:text="Surveys: "></TextView>
+	   			<TextView
+	   				android:layout_width="wrap_content"
+	   				android:layout_height="wrap_content"
+	   				android:id="@+id/aircrack_table_number_of_surveys"
+	   				android:textColor="@android:color/white"
+	   				android:text = "test"
+	   			></TextView>
+	   		</TableRow>
+	   	</TableLayout>
+	   	<TableLayout
+	   		android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/air_crack_key_table"
+	    >
+	   		<TableRow>
+	   			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/air_crack_key_display_name"
+					android:textColor="@android:color/white"
+					android:text = "KEY: "
+					android:layout_below="@id/air_crack_table"
+					android:paddingTop="20sp"
+					>
+	 			</TextView>
+	 			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/air_crack_key_actual_key"
+					android:textColor="@android:color/white"
+					android:text = "XXXX_XXXX_XXXX_XXXX"
+					android:layout_below="@id/air_crack_table"
+					android:paddingTop="20sp"
+					android:paddingBottom="20sp"
+					android:layout_toRightOf="@id/air_crack_key_display_name"
+				>
+				</TextView>
+	   		</TableRow>
+		</TableLayout>
+	</LinearLayout>
+	<TableLayout
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/grey"
+	>
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/left_button2"
+			android:id="@+id/air_crack_menu_button"
+		></ImageButton>
+	</TableLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/home_service"
+	      android:title="Survey" />
+	<item android:id="@+id/home_networklist"
+		  android:title="View Known Networks" />
+	<item android:id="@+id/home_networkdevices"
+		  android:title="View Known Devices" />
+   	<item android:id="@+id/home_options"
+          android:title="Options" 
+          android:icon="@android:drawable/ic_menu_manage">
+          <menu>
+	           	<item android:id="@+id/home_saveklms"
+          			  android:title="Export KLM/Raptorx"/>
+	            <item android:id="@+id/home_clear"
+	                  android:title="Clear" />
+	           	<item android:id="@+id/home_none_of_the_above"
+	                  android:title="None of the above" />
+       	 </menu>
+   </item>
+    <item android:id="@+id/home_quit"
+          android:title="Quit"
+          android:icon="@android:drawable/ic_menu_close_clear_cancel" />
+</menu>
